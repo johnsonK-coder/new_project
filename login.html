@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <!---Nav-bar---->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="case">E-ent O</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="myAbt" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="myContact" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Blogs</a>
+          </li>
+        </ul>
+        <form class="d-flex form" role="search">
+          <input class="form-control me-auto" type="search" placeholder="Search" aria-label="Search" id="from">
+        </form>
+        <i class="fa-sharp fa-solid fa-bars" id="from2"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!---Data-Link---->
+  <h2>Social Life</h2>
+  <div class="text-center filterSpan">
+    <span class="btn fw-bold action" data-link="all">All</span>
+    <span class="btn fw-bold" data-link="people">People</span>
+    <span class="btn fw-bold" data-link="environ">Environ</span>
+    <span class="btn fw-bold" data-link="drama">Drama</span>
+    <span class="btn fw-bold" data-link="food">Food</span>
+  </div>
+  <!--Images and cards------>  
+  <h4 id="myH4"></h4>        
+  <div class="container">
+    <div class="row media gy-4">
+      <div class="col-md-4">
+        <div class="card shadow people">
+          <div class="card-body">
+            <img src="./images/people1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow people" id="people">
+          <div class="card-body">
+            <img src="./images/people2.jpg" alt="" class="img-fluid">
+          </div>
+          <h2 id="demo"></h2>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow people">
+          <div class="card-body">
+            <img src="./images/people3.jpg" alt="" class="img-fluid">
+          </div>
+          <h2 id="demo"></h2>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow environ">
+          <div class="card-body">
+            <img src="./images/environ1.jpg" alt="" class="img-fluid">
+          </div>
+          <h2 id="demo"></h2>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow environ gy-4">
+          <div class="card-body">
+            <img src="./images/environ2.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow environ">
+          <div class="card-body">
+            <img src="./images/environ3.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow drama">
+          <div class="card-body">
+            <img src="./images/drama1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow drama">
+          <div class="card-body">
+            <img src="./images/drama2.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow drama">
+          <div class="card-body">
+            <img src="./images/drama3.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow food">
+          <div class="card-body">
+            <img src="./images/food1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow food">
+          <div class="card-body">
+            <img src="./images/food2.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow food">
+          <div class="card-body">
+            <img src="./images/food3.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
